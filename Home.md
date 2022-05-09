@@ -1,0 +1,67 @@
+# Mageki使用手册
+　　Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheiii/ongeki-io)，来到这个页面的你一定已经迫不及待了，但是首先你需要一个能够成功运行并使用其它方式控制的游戏本体。如果你还没有，请参阅：
+### [最新最热的游戏下载与配置说明](https://b23.tv/kTexjLG)
+当游戏本体配置完备后，才可以进行下面的步骤。
+## 开始使用
+请前往[发布页](https://github.com/Sanheiii/Mageki/releases)下载所需的文件。
+### 安装程序
+- Android
+  - 下载 __mageki.apk__。
+  - 在Android设备上打开以安装程序。
+- iOS
+  - 下载 __mageki.ipa__。
+  - 使用自签工具（如[AltStore](https://altstore.io/)）安装ipa。
+- UWP
+  - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
+### 配置ongeki-io
+1. 将 __MU3Input.zip__ 的内容解压至 __SDDT\package__ 目录下。
+2. 根据以下说明 __segatools.ini__ 内 __[mu3io]__ 下 __protocol__ 字段的值：
+</br>
+
+- 使用无线连接
+```ini
+protocol=udp
+```
+- 使用Android设备有线连接
+```ini
+protocol=tcp
+```
+- 使用iOS设备有线连接
+```ini
+protocol=usbmux
+```
+
+</br>
+
+3. 保存文件。
+### 使用Mageki连接到ongeki-io
+1. 打开Mageki，此时 __*オンゲキ*__ 图标显示为灰色。
+2. 点击 __*オンゲキ*__ 图标 打开设置页面。
+3. 在 __连接__ → __协议__ 中选择：
+
+</br>
+
+　　无线连接： __UDP__
+
+</br>
+
+　　有线连接： __TCP__
+
+__无线连接在这里即可完成，但由于某些原因，但不是所有人都能够无线连接成功。__
+
+__如需使用有线连接需要额外进行下面步骤：__
+
+- 使用USB线缆连接移动设备与PC。
+- 如果你使用iOS设备，需要在PC中安装[iTunes](https://support.apple.com/HT210384)与[iCloud](https://support.apple.com/HT204283)（不要下载Microsoft Store中的版本，自签时应该已经安装过）。
+- 如果你使用Android设备，需要打开 __USB调试__ 并使用[ADB](https://developer.android.com/studio/releases/platform-tools)命令进行端口转发。
+```
+adb forward tcp:4354 tcp:4354
+```
+
+为Android设备启用端口转发后，PC端将无法正确检测连接性。
+
+<br/>
+
+__成功连接后， *オンゲキ* 图标将会变为黑色__。
+
+<br/>
