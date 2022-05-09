@@ -5,11 +5,11 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 请前往[发布页](https://github.com/Sanheiii/Mageki/releases)下载所需的文件。
 ### 安装程序
 - Android
-  - 下载 __mageki.apk__。
-  - 在Android设备上打开以安装程序。
+  1. 下载 __mageki.apk__。
+  2. 在Android设备上打开以安装程序。
 - iOS
-  - 下载 __mageki.ipa__。
-  - 使用自签工具（如[AltStore](https://altstore.io/)）安装ipa。
+  1. 下载 __mageki.ipa__。
+  2. 使用自签工具（如[AltStore](https://altstore.io/)）安装ipa。
 - UWP
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
