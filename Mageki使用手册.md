@@ -2,7 +2,7 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 ### [最新最热的游戏下载与配置说明](https://b23.tv/kTexjLG)
 当游戏本体配置完备后，才可以进行下面的步骤。
 ## 开始使用
-请前往[发布页](https://github.com/Sanheiii/Mageki/releases)下载所需的文件。
+请前往 __[发布页](https://github.com/Sanheiii/Mageki/releases)__ 下载所需的文件。
 ### 安装程序
 - Android
   1. 下载 __mageki.apk__。
@@ -17,15 +17,15 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 2. 根据以下说明修改 __segatools.ini__ 内 __[mu3io]__ 下 __protocol__ 字段的值：
 </br>
 
-- 使用无线连接
+- 使用 __无线连接__
 ```ini
 protocol=udp
 ```
-- 使用Android设备有线连接
+- 使用 __Android__ 设备 __有线连接__
 ```ini
 protocol=tcp
 ```
-- 使用iOS设备有线连接
+- 使用 __iOS__ 设备 __有线连接__
 ```ini
 protocol=usbmux
 ```
@@ -52,7 +52,7 @@ __如需使用有线连接需要额外进行下面步骤：__
 
 - 使用USB线缆连接移动设备与PC。
 - 如果你使用iOS设备，需要在PC中安装[iTunes](https://support.apple.com/HT210384)与[iCloud](https://support.apple.com/HT204283)（不要下载Microsoft Store中的版本，自签时应该已经安装过）。
-- 如果你使用Android设备，需要打开 __USB调试__ 并使用[ADB](https://developer.android.com/studio/releases/platform-tools)命令进行端口转发。
+- 如果你使用Android设备，需要打开 __USB调试__ 并使用[ADB](https://developer.android.com/studio/releases/platform-tools)命令进行 __端口转发__ 。
 ```
 adb forward tcp:4354 tcp:4354
 ```
