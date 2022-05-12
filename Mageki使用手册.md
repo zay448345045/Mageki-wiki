@@ -13,8 +13,9 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 - UWP
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
-1. 将 __MU3Input.zip__ 的内容解压至 __SDDT\package__ 目录下。
-2. 根据以下说明修改 __segatools.ini__ 内 __[mu3io]__ 下 __protocol__ 字段的值：
+1.  __MU3Input.zip__ 的内容解压至 __SDDT\package__ 目录下。
+2. 将 __segatools_diff.ini__ 中的内容添加到 __segatools.ini__ 中，并删除原有 __[mu3io]__ 与 __[aime3io]__ 下的内容。
+3. 根据以下说明修改 __[mu3io]__ 下 __protocol__ 字段的值：
 </br>
 
 - 使用 __无线连接__
@@ -32,7 +33,7 @@ protocol=usbmux
 
 </br>
 
-3. 保存文件。
+4. 保存文件。
 ### 使用Mageki连接到ongeki-io
 1. 打开Mageki，此时 __*オンゲキ*__ 图标显示为灰色。
 2. 点击 __*オンゲキ*__ 图标 打开设置页面。
@@ -46,7 +47,7 @@ protocol=usbmux
 
 　　有线连接： __TCP__
 
-__无线连接在这里即可完成，但由于某些原因，不是所有人都能够无线连接成功。__
+__无线连接在这里即可完成，但由于某些原因，不是所有人都能够成功无线连接。__
 
 __如需使用有线连接需要额外进行下面步骤：__
 
