@@ -55,7 +55,7 @@ __如需使用有线连接需要额外进行下面步骤：__
 - 如果你使用iOS设备，需要在PC中安装[iTunes](https://support.apple.com/HT210384)与[iCloud](https://support.apple.com/HT204283)（不要下载Microsoft Store中的版本，自签时应该已经安装过）。
 - 如果你使用Android设备，需要打开 __USB调试__ 并使用[ADB](https://developer.android.com/studio/releases/platform-tools)命令进行 __端口转发__ 。
 ```
-adb forward tcp:4354 tcp:4354
+./adb forward tcp:4354 tcp:4354
 ```
 
 为Android设备启用端口转发后，PC端将无法正确检测连接性。
