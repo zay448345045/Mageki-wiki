@@ -1,0 +1,1 @@
+mu3input_config.json是ongeki-io的配置文件
