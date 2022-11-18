@@ -9,7 +9,7 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
   1. 下载 __mageki_x.x.x.apk__。
   2. 在Android设备上打开以安装程序。
 - iOS
-  1. 进入[__TestFlight__](https://testflight.apple.com/join/efWEB1qC)页面按照提示操作。
+  - 进入[__TestFlight__](https://testflight.apple.com/join/efWEB1qC)页面按照提示操作。
 - UWP
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
