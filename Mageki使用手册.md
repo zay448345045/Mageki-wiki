@@ -32,7 +32,7 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 
 __无线连接在这里即可完成，但由于某些未知的原因，不是所有人都能够成功无线连接，如果你没有连接成功，请使用Tcp或Usbmux协议进行有线连接。__
 
-__如需使用有线连接需要额外进行下面步骤：__
+__如需使用有线连接需要额外进行下面操作：__
 
 - 使用USB线缆连接移动设备与PC。
 - 如果你使用iOS设备，需要在PC中安装[iTunes](https://support.apple.com/HT210384)与[iCloud](https://support.apple.com/HT204283)（千万不要下载Microsoft Store中的版本）。
