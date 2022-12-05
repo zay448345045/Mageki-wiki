@@ -9,7 +9,7 @@
 
 
   - 支持定义的按键：[__KeyboardIOConfig__](https://github.com/Sanheiii/ongeki-io/blob/develop/MU3Input/IO/KeyboardIO.cs#L82)
-  - 值使用ASCii码或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值
+  - 值使用KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值
 - __Hid__：无Param
 
 
