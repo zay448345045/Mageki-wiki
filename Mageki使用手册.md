@@ -9,7 +9,7 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
   1. 下载 __mageki_x.x.x.apk__。
   2. 在Android设备上打开以安装程序。
 - iOS
-  - 进入[__TestFlight__](https://testflight.apple.com/join/efWEB1qC)页面按照提示操作。
+  - 进入页面按照提示操作。
 - UWP
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
@@ -55,3 +55,7 @@ __解答以下问题的前提是在配置Mageki之前能够正常运行，并且
 可以尝试解压 __configs.zip__ 中的内容至 __package__ 文件夹
 ### 进入游戏后摇杆没有反应
 在游戏中点击 __*オンゲキ*__ 图标打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动Mageki上方的空白区域移动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
+### 无线连不上
+不用试了，改用有线连接
+### iOS有线连不上
+下载[__爱思助手__](https://www.i4.cn/)打开按提示操作
