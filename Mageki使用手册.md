@@ -14,13 +14,19 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
 1.  __MU3Input_x.x.x.zip__ 的内容解压至 __SDDT\package__ 目录下。
-2. 按照 __segatools_diff.ini__ 中的内容修改 __segatools.ini__ 中 __[mu3io]__ 与 __[aimeio]__ 下的内容。
+2. 修改 __segatools.ini__ 中 __[mu3io]__ 与 __[aimeio]__ 下的内容，如果没有，则添加它们。
+``` ini
+[mu3io]
+path = MU3Input.dll
+
+[aimeio]
+path = MU3Input.dll
+```
 3. 根据 [__mu3input_config.json说明__](https://github.com/Sanheiii/Mageki/wiki/mu3input_config.json) 中的指引修改 __mu3input_config.json__ 中的值，如果没有这个文件，运行 __Test.exe__ 会自动生成。
 
 ### 使用Mageki连接到ongeki-io
-1. 打开Mageki，此时 __*オンゲキ*__ 图标显示为灰色。
-2. 点击 __*オンゲキ*__ 图标 打开设置页面。
-3. 在 __连接__ → __协议__ 中根据 __mu3input_config.json__ 中启用的协议选择：
+1. 点击左上角的设置图标 打开设置页面。
+2. 在 __连接__ → __协议__ 中根据 __mu3input_config.json__ 中启用的协议选择：
 
 </br>
 
@@ -44,16 +50,14 @@ __如需使用有线连接需要额外进行下面操作：__
 
 <br/>
 
-__成功连接后， *オンゲキ* 图标将会变为黑色__。
+__成功连接后， __连接__ → __状态__ 图标显示为 __已连接__。
 
 <br/>
 
 ## 操作说明
-- Android打开程序，iPhone长按Logo后可扫描Aime卡片
-- Android，iPad长按Logo，iPhone取消扫描卡片后可模拟刷卡。
-- 点击按钮或其下方区域触发按钮。
-- 在屏幕任意位置水平滑动模拟摇杆。
-- 点击空白部分触发侧键。
+- Android打开程序，iPhone长按设置按钮后可扫描Aime卡片
+- Android，iPad长按设置按钮，iPhone取消扫描卡片后可模拟刷卡。
+- 点击按钮或其下方区域均可以触发按钮。
 - 设置中隐藏按钮后可方便作为单独的摇杆，读卡器，或侧键使用
 
 <br/>
@@ -63,8 +67,8 @@ __成功连接后， *オンゲキ* 图标将会变为黑色__。
 __解答以下问题的前提是在配置Mageki之前能够正常运行，并且解决方案也不一定有效__
 ### 解压MU3Input后无法正常游戏
 可以尝试解压 __configs.zip__ 中的内容至 __package__ 文件夹
-### 进入游戏后摇杆没有反应
-在游戏中点击 __*オンゲキ*__ 图标打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动Mageki上方的空白区域移动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
+### 进入游戏后摇杆没有反应或产生偏移
+在游戏中点击 __设置__ 按钮打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
 ### 无线连不上
 不用试了，改用有线连接
 ### iOS有线连不上
