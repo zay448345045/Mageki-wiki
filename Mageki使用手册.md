@@ -1,6 +1,6 @@
 # 使用手册
 Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheiii/ongeki-io)，来到这个页面的你一定已经迫不及待了，但是首先你需要一个能够成功运行并使用其它方式控制的游戏本体。如果还没有，请参阅：
-### [最新最热的游戏下载与配置说明](https://www.bilibili.com/video/BV1uT4y1P7CX/)
+### [最新最热的游戏下载与配置说明](http://sddt-dist.sys-all.xyz/135/app/SDDT_20220401114514_0.app)
 当游戏本体配置完备后，才可以进行下面的步骤。
 ## 开始使用
 请前往 __[发布页](https://github.com/Sanheiii/Mageki/releases)__ 下载所需的文件。
