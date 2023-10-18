@@ -41,8 +41,8 @@ __无线连接在这里即可完成，但由于某些未知的原因，不是所
 __如需使用有线连接需要额外进行下面操作：__
 
 - 使用USB线缆连接移动设备与PC。
-- 如果你使用iOS设备，需要在PC中安装[iTunes](https://support.apple.com/HT210384)与[iCloud](https://support.apple.com/HT204283)（千万不要下载Microsoft Store中的版本）。
-- 如果你使用Android设备，需要打开 __USB调试__ 并使用[ADB](https://developer.android.com/studio/releases/platform-tools)命令进行 __端口转发__ 。
+- 如果你使用iOS设备，需要在PC中安装[__爱思助手__](https://www.i4.cn/)，在爱思助手中成功连接设备并显示设备信息后即可关闭。
+- 如果你使用Android设备，需要打开 __USB调试__ 并使用[__ADB__](https://developer.android.com/studio/releases/platform-tools)命令进行 __端口转发__ 。
 ```
 ./adb forward tcp:4354 tcp:4354
 ```
@@ -50,7 +50,7 @@ __如需使用有线连接需要额外进行下面操作：__
 
 <br/>
 
-__成功连接后， __连接__ → __状态__ 图标显示为 __已连接__。
+启动游戏或Test成功连接到IO后， __连接__ → __状态__ 图标显示为 __已连接__。
 
 <br/>
 
@@ -71,5 +71,3 @@ __解答以下问题的前提是在配置Mageki之前能够正常运行，并且
 在游戏中点击 __设置__ 按钮打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
 ### 无线连不上
 不用试了，改用有线连接
-### iOS有线连不上
-下载[__爱思助手__](https://www.i4.cn/)打开按提示操作
