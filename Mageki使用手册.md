@@ -88,23 +88,23 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
 在游戏中点击 __设置__ 按钮打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
 ### 有线连不上
 - 安卓
-  1. 请检查线缆有无正常链接至安卓设备，并且设备已经开启了开发者模式
-  2. 请确认电脑端有显示出你的安卓设备，并且已经安装好了[__ADB Tools__](https://developer.android.com/studio/releases/platform-tools)。
-  3. 使用指令 ./adb forward tcp:4354 tcp:4354 转发
-  4. 请确认您的设备上正确设定了和[__mu3input_config.json__](https://github.com/Sanheiii/Mageki/wiki/mu3input_config.json)中相对应的值。
-  5. 启动游戏/启动Test，您将会看见 连接 → 状态 图标显示为 已连接
+  - 请检查线缆有无正常链接至安卓设备，并且设备已经开启了开发者模式
+  - 请确认电脑端有显示出你的安卓设备，并且已经安装好了[__ADB Tools__](https://developer.android.com/studio/releases/platform-tools)。
+  - 使用指令 ./adb forward tcp:4354 tcp:4354 转发
+  - 请确认您的设备上正确设定了和[__mu3input_config.json__](https://github.com/Sanheiii/Mageki/wiki/mu3input_config.json)中相对应的值。
+  - 启动游戏/启动Test，您将会看见 连接 → 状态 图标显示为 已连接
 - ios
-  1. 请在电脑上下载爱思助手[__爱思助手__](https://www.i4.cn/)，并且在上面成功显示你的设备。
-  2. 在mu3input_config.json内更改Type为Usbmux模式
+  - 请在电脑上下载爱思助手[__爱思助手__](https://www.i4.cn/)，并且在上面成功显示你的设备。
+  - 在mu3input_config.json内更改Type为Usbmux模式
 - 还搞不定怎么办
-  1. 请重新阅读上方教程
-  2. 详细列出故障现象，已经配置好的内容，请坐和放宽，以一个和善的心态去群内问如何解决。
-  3. 检查你下载的软件版本是否正确，请按照本wiki链接里的下载地址去下载软件而不是百度。
+  - 请重新阅读上方教程
+  - 详细列出故障现象，已经配置好的内容，请坐和放宽，以一个和善的心态去群内问如何解决。
+  - 检查你下载的软件版本是否正确，请按照本wiki链接里的下载地址去下载软件而不是百度。
 ### 无线连不上
-  1. 请检查你的两台设备是否处在同一局域网。
-  2. 缘分没到，不用试了，改用有线连接。
+  - 请检查你的两台设备是否处在同一局域网。
+  - 缘分没到，不用试了，改用有线连接。
 ### 刷卡故障
-  1. 检查你mu3input_config.json内是否给mageki设备aime权限
-  2. 检查你的设备支不支持NFC (这决定了你能不能使用你的移动设备读卡，如果没有就别用NFC读卡)
-  3. 检查你的移动设备设置里Aime选项里是否正确填入卡号，或游戏device/aime.txt 或device/felica.txt 内是否为有效的aime/felica号，例：Aime为20位数字且不能为3开头
-  4. 如果长按设置无反应，试试使用键盘上的Enter，此操作需要先确认游戏的device/aime.txt 或者device/felica.txt内是有效卡号
+  - 检查你mu3input_config.json内是否给mageki设备aime权限
+  - 检查你的设备支不支持NFC (这决定了你能不能使用你的移动设备读卡，如果没有就别用NFC读卡)
+  - 检查你的移动设备设置里Aime选项里是否正确填入卡号，或游戏device/aime.txt 或device/felica.txt 内是否为有效的aime/felica号，例：Aime为20位数字且不能为3开头
+  - 如果长按设置无反应，试试使用键盘上的Enter，此操作需要先确认游戏的device/aime.txt 或者device/felica.txt内是有效卡号
