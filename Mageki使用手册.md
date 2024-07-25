@@ -103,3 +103,8 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
 ### 无线连不上
   1. 请检查你的两台设备是否处在同一局域网。
   2. 缘分没到，不用试了，改用有线连接。
+### 刷卡故障
+  1.检查你mu3input_config.json内是否给mageki设备aime权限
+  2.检查你的设备支不支持NFC (这决定了你能不能使用你的移动设备读卡，如果没有就别用NFC读卡)
+  3.检查你的移动设备的设置里Aime选项里是否正确填入卡号，或者游戏device/aime.txt 或者device/felica.txt 内是否为有效的aime/felica号，例：Aime为20位数字且不能为3开头
+  4.如果长按设置无反应，试试使用键盘上的Enter，此操作需要先确认游戏的device/aime.txt 或者device/felica.txt内是有效卡号
