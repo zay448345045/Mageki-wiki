@@ -6,6 +6,8 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 ### 注意事项：
 - 适配
   - 本教程仅适用于 [Mageki]([https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app](https://github.com/Sanheiii/Mageki)) 的配置教程，请勿拿别的手台使用Mageki教程并配置，Its Useless。
+- 配置前悉知
+  - 你在配置前必须绿网/进入动画界面，如果本来就进不去，配完肯定还是进不去哦
   - 我__建议__使用原盘/纯净盘前来配置Mageki，如果你用的是比如专用操作台的懒人一件包，可能会因为某些神奇的问题无法正常配置/游玩
 - 教程中的 [蓝字](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app)
   - 教程中的所有 [蓝字](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app) 都是可以 [点击](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app) 的，如果你Stuck在哪个步骤了，不妨按下这个神奇的蓝色按钮呢？
