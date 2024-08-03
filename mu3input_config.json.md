@@ -1,5 +1,7 @@
-运行 __Test.exe__ 能够在当前目录生成mu3input_config.json，在此基础上可以进行一定程度的修改<br>
-[蓝字能点](https://www.bilibili.com/video/BV1GJ411x7h7)但椅子不能坐，所以为什么不能点一下蓝字呢
+运行 __Test.exe__ 能够在当前目录生成mu3input_config.json，在此基础上可以进行一定程度的修改<br><br>
+[蓝字能点](https://www.bilibili.com/video/BV1GJ411x7h7) 但椅子不能坐，所以为什么不能点一下蓝字呢<br>
+
+# 基础配置解析
 
 支持的 __Type__ 及对应 __Param__ 的内容有
 - __UDP__：端口号
@@ -25,7 +27,7 @@
 
 你也可以参考IO源代码获取更多可映射的按键 [__KeyboardIOConfig__](https://github.com/Sanheiii/ongeki-io/blob/develop/MU3Input/IO/KeyboardIO.cs#L82)
 
-  - 值使用KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值
+### 按键映射的值必须使用KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值
 
 - __Part__ 用于指定负责的功能，__使用半角逗号(, )分隔__，一般来说可指定的值为下表<br>
 （表中等号前面的是你填写至Part的值，等号后的为此值控制的参数）
@@ -44,7 +46,8 @@
 
 当然，你也可以参考源代码的Config来查看还能配置出什么神奇的花样 [__MU3Input.Config.cs__](https://github.com/Sanheiii/ongeki-io/blob/develop/MU3Input/Config.cs#L69)
 
-使用多台设备运行Mageki连接到同一PC时请指定不同的端口！！！
+### 使用多台设备运行Mageki连接到同一PC时请指定不同的端口！！！
+***
 # 使用例
 ## Mageki正常连接例
 ### UdpIO
@@ -177,3 +180,6 @@ mu3input_config.json:
   ]
 }
 ```
+***
+
+***
