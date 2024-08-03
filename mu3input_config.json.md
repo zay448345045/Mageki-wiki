@@ -1,6 +1,8 @@
 运行 __Test.exe__ 能够在当前目录生成mu3input_config.json，在此基础上可以进行一定程度的修改<br><br>
 [蓝字能点](https://www.bilibili.com/video/BV1GJ411x7h7) 但椅子不能坐，所以为什么不能点一下蓝字呢<br>
 
+***
+
 # 基础配置解析
 
 支持的 __Type__ 及对应 __Param__ 的内容有
@@ -180,6 +182,3 @@ mu3input_config.json:
   ]
 }
 ```
-***
-
-***
