@@ -1,5 +1,5 @@
-运行 __Test.exe__ 能够在当前目录生成mu3input_config.json，在此基础上可以进行一定程度的修改
-
+运行 __Test.exe__ 能够在当前目录生成mu3input_config.json，在此基础上可以进行一定程度的修改<br>
+[蓝字能点](https://www.bilibili.com/video/BV1GJ411x7h7)但椅子不能坐，所以为什么不能点一下蓝字呢
 
 支持的 __Type__ 及对应 __Param__ 的内容有
 - __UDP__：端口号
@@ -91,7 +91,7 @@ mu3input_config.json:
 ```
 ## 混合使用例
 - 使用按键ASD GHJ控制L1 L2 L3  L4 L5 L6，使用有线mageki控制其他项目<br>
-- 按键的键值请从KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值<br>
+- 按键的键值请从KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值中选择<br>
 mu3input_config.json:
 ``` json
 {
