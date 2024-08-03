@@ -90,6 +90,32 @@ mu3input_config.json:
 }
 ```
 ## 混合使用例
+- 使用按键ASD GHJ控制L1 L2 L3  L4 L5 L6，使用有线mageki控制其他项目<br>
+- 按键的键值请从KeyCode或[__System.Windows.Forms.Keys__](https://learn.microsoft.com/zh-cn/dotnet/api/system.windows.forms.keys)中定义的枚举值<br>
+mu3input_config.json:
+``` json
+{
+  "IO": [
+    {
+      "Type": "Keyboard",
+      "Param": {
+        "L1":"65",
+        "L2":"83",
+        "L3":"68",
+        "R1":"71",
+        "R2":"72",
+        "R3":"74"
+      },
+      "Part": "KeyBoard "
+    },
+    {
+      "Type": "Tcp",
+      "Param": 4354,
+      "Part": "Lever, Side, Menu, Aime"
+    }
+  ]
+}
+```
 - 使用iPad控制游戏，支持NFC的手机作为读卡器使用<br>
 mu3input_config.json:
 ``` json
