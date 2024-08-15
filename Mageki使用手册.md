@@ -35,42 +35,7 @@ path = MU3Input.dll
 path64 = MU3Input.dll
 ```
 3. 运行 __IOConfig.exe__ 并参照 __[IOConfig说明](https://github.com/Sanheiii/Mageki/wiki/ioconfig)__ 配置它
-4. 第三步很关键，如果您并未修改此文件使其设置与您设备对应，您将可能回来看这里第二遍。
-
-### 使用Mageki连接到ongeki-io
-1. 点击左上角的设置图标 打开设置页面。
-2. 在 __连接__ → __协议__ 中根据 __IOConfig__ 中启用的协议选择：
-
-</br>
-　　Udp： UDP
-
-</br>
-</br>
-
-　　Tcp、Usbmux： TCP
-
-</br>
-
-__请注意：此处的含义为，当您在IOConfig中使用UDP协议时，在客户端处应选择UDP连接，使用TCP/Usbmux时应选择TCP连接，而不是再次修改IOConfig的内容。__
-
-无线连接在这里即可完成，但由于某些未知的原因，不是所有人都能够成功无线连接，如果你没有连接成功，请使用Tcp或Usbmux协议进行有线连接。
-
-_不要问为什么别人可以我不可以，问就是缘分没到_
-
-__如需使用有线连接需要额外进行下面操作：__
-
-- 使用USB线缆连接移动设备与PC。
-- 如果你使用iOS设备，需要在PC中安装[__爱思助手__](https://www.i4.cn/)，在爱思助手中成功连接设备并显示设备信息后即可关闭。
-- 如果你使用Android设备，需要打开 __USB调试__ 并使用[__ADB__](https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn)命令进行 __端口转发__ 。
-```
-./adb forward tcp:4354 tcp:4354
-```
-- 如果Android设备有线连接遇到问题，参阅这些内容
-  - [安装ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)
-  - [安装OEM USB驱动](https://developer.android.google.cn/studio/run/oem-usb)
-- 上面的蓝字都可以点击，如果您不想上网搜索，请直接点击上方蓝字到达工具官网，也可以右键在新页面打开，关于如何安装，请自行百度。
-
-<br/>
+4. 第3步很关键，如果您并未修改此文件使其设置与您设备对应，您将可能回来看这里第二遍。
 
 成功连接到IO后， __连接__ → __状态__ 图标显示为 __已连接__。
 __测试完成后，启动游戏前先关闭IOConfig__
@@ -96,13 +61,11 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
 ### 有线连不上
 - 安卓
   - 请检查线缆有无正常链接至安卓设备，并且设备已经开启了开发者模式
-  - 请确认电脑端有显示出你的安卓设备，并且已经安装好了[__ADB Tools__](https://developer.android.com/studio/releases/platform-tools)。
-  - 使用指令 ./adb forward tcp:4354 tcp:4354 转发
-  - 请确认您的设备上正确设定了和[__IOConfig__](https://github.com/Sanheiii/Mageki/wiki/ioconfig)中相对应的值。
-  - 启动游戏/启动Test，您将会看见 连接 → 状态 图标显示为 已连接
+  - 请确认电脑端有显示出你的安卓设备，并且按照[教程](https://www.xda-developers.com/install-adb-windows-macos-linux/)安装并运行ADB命令```adb forward tcp:4354 tcp:4354```
+  - 请确认您的设备上端口号正确设定了和[__IOConfig__](https://github.com/Sanheiii/Mageki/wiki/ioconfig)中相对应的值。
+  - 启动游戏/启动IOConfig.exe，您将会看见 连接 → 状态 图标显示为 已连接
 - ios
   - 请在电脑上下载爱思助手[__爱思助手__](https://www.i4.cn/)，并且在上面成功显示你的设备。
-  - 在mu3input_config.json内更改Type为Usbmux模式
 - 还搞不定怎么办
   - 请重新阅读上方教程
   - 详细列出故障现象，已经配置好的内容，请坐和放宽，以一个和善的心态去群内问如何解决。
