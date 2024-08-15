@@ -62,7 +62,7 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
 - 安卓
   - 请检查线缆有无正常链接至安卓设备，并且设备已经开启了开发者模式
   - 请确认电脑端有显示出你的安卓设备，并且按照[教程](https://www.xda-developers.com/install-adb-windows-macos-linux/)安装并运行ADB命令```adb forward tcp:4354 tcp:4354```
-  - 请确认您的设备上端口号正确设定了和[__IOConfig__](https://github.com/Sanheiii/Mageki/wiki/ioconfig)中相对应的值。
+  - 请确认您的设备上端口号正确设定了和[__IOConfig__](https://github.com/Sanheiii/Mageki/wiki/IOConfig%E8%AF%B4%E6%98%8E)中相对应的值。
   - 启动游戏/启动IOConfig.exe，您将会看见 连接 → 状态 图标显示为 已连接
 - ios
   - 请在电脑上下载爱思助手[__爱思助手__](https://www.i4.cn/)，并且在上面成功显示你的设备。
