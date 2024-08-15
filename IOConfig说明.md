@@ -25,7 +25,7 @@ IOConfig.exe是用于配置[ongeki-io](https://github.com/Sanheiii/ongeki-io)的
 4. 将Mageki设置页面的 __连接__ → __协议__ 的值修改为TCP
 5. 将Mageki设置页面的 __连接__ → __端口__ 与IOConfig中 __TCP控制器__ → __端口__ 设置为相同的值
 ### UDP
-用于无线连接到Mageki
+用于无线连接到Mageki，无线连接延迟高且容易断连，卡键，也可能受制于网络环境完全连不上，不建议使用
 1. 在IOConfig点击 __添加控制器__ → __Udp__ → __确定__
 2. 控制设备与PC连接到同一局域网
 3. 将Mageki设置页面的 __连接__ → __协议__ 的值修改为UDP
