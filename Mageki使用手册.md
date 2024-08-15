@@ -1,27 +1,27 @@
 # 使用手册
 Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheiii/ongeki-io)，来到这个页面的你一定已经迫不及待了，但是首先你需要一个能够成功运行并使用其它方式控制的游戏本体。如果还没有，请参阅：
 ### [最新最热的游戏下载与配置说明](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app)
-当游戏本体配置完备后，才可以进行下面的步骤。
+当游戏本体配置完备且成功运行后，才可以进行下面的步骤。
 
 ### 注意事项：
 - 适配
-  - 本教程仅适用于 [Mageki]([https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app](https://github.com/Sanheiii/Mageki)) 的配置教程，请勿拿别的手台使用Mageki教程并配置，Its Useless。
+  - 本教程仅适用于 [Mageki](https://github.com/Sanheiii/Mageki) 的配置，请勿拿别的手台使用Mageki教程并配置，Its Useless。
 - 配置前悉知
   - 你在配置前必须绿网/进入动画界面，如果本来就进不去，配完肯定还是进不去哦
-  - 我__建议__使用原盘/纯净盘前来配置Mageki，如果你用的是比如专用操作台的懒人一件包，可能会因为某些神奇的问题无法正常配置/游玩
+  - 我 __建议__ 使用原盘/纯净盘前来配置Mageki，如果你用的是比如专用操作台的懒人一件包，可能会因为某些神奇的问题无法正常配置/游玩
 - 教程中的 [蓝字](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app)
   - 教程中的所有 [蓝字](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app) 都是可以 [点击](https://sddt-dist.sys-all.xyz/145/app/SDDT_1.45.01_20240401114514_0.app) 的，如果你Stuck在哪个步骤了，不妨按下这个神奇的蓝色按钮呢？
 - 必要性
   - 本教程是Mageki非常必要的一个Getting Start篇章，如果您在初次配置完后发现连接不上，请按照可能遇到的问题开始排查。
 
 # 开始使用
-请前往 __[发布页](https://github.com/Sanheiii/Mageki/releases)__ 下载所需的文件，建议无脑下最新版(为什么有人刻意翻历史版本啊)。
+请前往 __[发布页](https://github.com/Sanheiii/Mageki/releases)__ 下载所需的文件，建议无脑下 __[最新版](https://github.com/Sanheiii/ongeki-io/releases/latest)__ (为什么有人刻意翻历史版本啊)。
 ### 安装程序
 - Android
-  1. 在 [发布页](https://github.com/Sanheiii/Mageki/releases) 下载 __mageki_x.x.x.apk__。
+  1. 在 [发布页](https://github.com/Sanheiii/Mageki/releases/latest) 下载 __mageki_x.x.x.apk__。
   2. 在Android设备上打开以安装此程序。
 - iOS
-  - 进入 [发布页](https://github.com/Sanheiii/Mageki/releases) 按照提示操作。
+  - 进入 [发布页](https://github.com/Sanheiii/Mageki/releases/latest) 按照提示操作。
 - UWP
   - 缺少触屏设备无法调试，如有需求请自行编译，Debug并提交Pull request。
 ### 配置ongeki-io
@@ -32,14 +32,14 @@ Mageki可以使用移动设备来连接到[ongeki-io](https://github.com/Sanheii
 path = MU3Input.dll
 
 [aimeio]
-path = MU3Input.dll
+path64 = MU3Input.dll
 ```
-3. 根据 [__mu3input_config.json说明__](https://github.com/Sanheiii/Mageki/wiki/mu3input_config.json) 中的指引修改 __mu3input_config.json__ 中的值，如果没有这个文件，运行 __Test.exe__ 会自动生成。
+3. 运行 __IOConfig.exe__ 并参照 __[IOConfig说明](https://github.com/Sanheiii/Mageki/wiki/ioconfig)__ 配置它
 4. 第三步很关键，如果您并未修改此文件使其设置与您设备对应，您将可能回来看这里第二遍。
 
 ### 使用Mageki连接到ongeki-io
 1. 点击左上角的设置图标 打开设置页面。
-2. 在 __连接__ → __协议__ 中根据 __mu3input_config.json__ 中启用的协议选择：
+2. 在 __连接__ → __协议__ 中根据 __IOConfig__ 中启用的协议选择：
 
 </br>
 　　Udp： UDP
@@ -51,7 +51,7 @@ path = MU3Input.dll
 
 </br>
 
-__请注意：此处的含义为，当您在mu3input_config.json中使用UDP协议时，在客户端处应选择UDP连接，使用TCP/Usbmux时应选择TCP连接，而不是修改mu3input_config.json的内容。__
+__请注意：此处的含义为，当您在IOConfig中使用UDP协议时，在客户端处应选择UDP连接，使用TCP/Usbmux时应选择TCP连接，而不是再次修改IOConfig的内容。__
 
 无线连接在这里即可完成，但由于某些未知的原因，不是所有人都能够成功无线连接，如果你没有连接成功，请使用Tcp或Usbmux协议进行有线连接。
 
@@ -61,16 +61,19 @@ __如需使用有线连接需要额外进行下面操作：__
 
 - 使用USB线缆连接移动设备与PC。
 - 如果你使用iOS设备，需要在PC中安装[__爱思助手__](https://www.i4.cn/)，在爱思助手中成功连接设备并显示设备信息后即可关闭。
-- 如果你使用Android设备，需要打开 __USB调试__ 并使用[__ADB__](https://developer.android.com/studio/releases/platform-tools)命令进行 __端口转发__ 。
-- 上面的蓝字都可以点击，如果您不想上网搜索，请直接点击上方蓝字到达工具官网，也可以右键在新页面打开，关于如何安装，请自行百度。
+- 如果你使用Android设备，需要打开 __USB调试__ 并使用[__ADB__](https://developer.android.google.cn/tools/releases/platform-tools?hl=zh-cn)命令进行 __端口转发__ 。
 ```
 ./adb forward tcp:4354 tcp:4354
 ```
-
+- 如果Android设备有线连接遇到问题，参阅这些内容
+  - [安装ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)
+  - [安装OEM USB驱动](https://developer.android.google.cn/studio/run/oem-usb)
+- 上面的蓝字都可以点击，如果您不想上网搜索，请直接点击上方蓝字到达工具官网，也可以右键在新页面打开，关于如何安装，请自行百度。
 
 <br/>
 
-启动游戏或Test成功连接到IO后， __连接__ → __状态__ 图标显示为 __已连接__。
+成功连接到IO后， __连接__ → __状态__ 图标显示为 __已连接__。
+__测试完成后，启动游戏前先关闭IOConfig__
 
 <br/>
 
@@ -89,13 +92,13 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
 ### 解压MU3Input后无法正常游戏
 可以尝试解压 __configs.zip__ 中的内容至 __package__ 文件夹。
 ### 进入游戏后摇杆没有反应或产生偏移
-在游戏中点击 __设置__ 按钮打开设置菜单，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
+在游戏中点击Mageki里的 __设置__ 按钮打开设置页面，点击 __Test键__ ，退出Mageki的设置页面。根据游戏Test页面的提示，进入 __レバー設定__，分别向左右滑动摇杆，使Test页面中十六进制数不再变化。最后保存并退出Test页面。
 ### 有线连不上
 - 安卓
   - 请检查线缆有无正常链接至安卓设备，并且设备已经开启了开发者模式
   - 请确认电脑端有显示出你的安卓设备，并且已经安装好了[__ADB Tools__](https://developer.android.com/studio/releases/platform-tools)。
   - 使用指令 ./adb forward tcp:4354 tcp:4354 转发
-  - 请确认您的设备上正确设定了和[__mu3input_config.json__](https://github.com/Sanheiii/Mageki/wiki/mu3input_config.json)中相对应的值。
+  - 请确认您的设备上正确设定了和[__IOConfig__](https://github.com/Sanheiii/Mageki/wiki/ioconfig)中相对应的值。
   - 启动游戏/启动Test，您将会看见 连接 → 状态 图标显示为 已连接
 - ios
   - 请在电脑上下载爱思助手[__爱思助手__](https://www.i4.cn/)，并且在上面成功显示你的设备。
@@ -108,7 +111,7 @@ __解答以下问题的前提是您的游戏在配置Mageki之前能够正常运
   - 请检查你的两台设备是否处在同一局域网。
   - 缘分没到，不用试了，改用有线连接。
 ### 刷卡故障
-  - 检查你mu3input_config.json内是否给mageki设备aime权限
+  - 检查你IOConfig内需要用来刷卡的设备的作用域是否包含Aime
   - 检查你的设备支不支持NFC (这决定了你能不能使用你的移动设备读卡，如果没有就别用NFC读卡)
-  - 检查你的移动设备设置里Aime选项里是否正确填入卡号，或游戏device/aime.txt 或device/felica.txt 内是否为有效的aime/felica号，例：Aime为20位数字且不能为3开头
-  - 如果长按设置无反应，试试使用键盘上的Enter，此操作需要先确认游戏的device/aime.txt 或者device/felica.txt内是有效卡号
+  - 检查你的移动设备设置里Aime选项里是否正确填入卡号，或游戏device/aime.txt内是否为有效的aime号，例：Aime为20位数字且不能为3开头
+  - 如果长按设置无反应，试试使用键盘上的Enter，此操作需要先确认游戏的device/aime.txt内是有效卡号
